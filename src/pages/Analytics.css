@@ -1,0 +1,192 @@
+/* Base styles */
+
+.Project_section {
+    width: 100%;
+    height: 50vh;
+    padding: 0px 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Project_head {
+    width: 100%;
+    margin-bottom: 100px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.Project_head h2 {
+    font-size: 30px;
+    margin-bottom: -5px;
+}
+
+.Project_head h2 span {
+    color: #fd2d2d;
+}
+
+.flip1-card {
+    background-color: transparent;
+    width: 245px;
+    margin-top: -150px;
+    margin-left: 150px;
+    height: 270px;
+    perspective: 1000px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    padding: 5px;
+    border-radius: 2em;
+    backface-visibility: hidden;
+    margin-top: 0; /* Remove margin-top to center the flip card vertically */
+}
+
+.flip-card-front {
+    background-color: #fd2d2d;
+    border: 4px solid #fff;
+}
+
+.profile-image {
+    background-color: transparent;
+    border: none;
+    margin-top: 15px;
+    border-radius: 5em;
+    width: 190px;
+    height: 190px;
+    margin-left: 50px;
+}
+
+.pfp {
+    border-radius: 35em;
+    fill: #fff;
+}
+
+.name {
+    margin-top: 15px;
+    font-size: 27px;
+    color: #918b92;
+    font-weight: bold;
+}
+
+.flip-card-back {
+    background-color: #716c72;
+    border: 4px solid #3b383b;
+    padding: 11px;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.socialbar {
+    background-color: transparent;
+    border-radius: 3em;
+    width: 90%;
+    padding: 14px;
+    margin-top: 11px;
+    margin-left: 10px;
+    word-spacing: 24px;
+    color: white;
+}
+
+.socialbar svg {
+    transition: 0.4s;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+}
+
+.socialbar svg:hover {
+    color: white;
+}
+
+.flip2-card {
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 245px;
+    height: 270px;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Media Query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .Project_section {
+        height: auto;
+    }
+    
+    .Project_head {
+     
+        top: 0px;
+    }
+    
+    .flip1-card {
+        margin-left: 0;
+        width: 150px;
+        padding: 1rem;
+
+    }
+    
+    .flip2-card {
+        margin-top: 0;
+        margin-left: 0;
+        width: 150px;
+        padding: 1rem;
+      
+    }
+    
+    
+.profile-image img   {
+    width: 10%;
+    height: 100%;
+}
+.profile-image{
+    width: 1rem;
+}
+}
+
+/* Add this style to your existing CSS */
+
+.socialbar a[href^="https://github.com"] {
+    display: inline-block; /* Ensure the anchor tag behaves like a block */
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+.socialbar a[href^="https://github.com"] svg {
+    width: 30px; /* Adjust icon size as needed */
+    height: 30px;
+    color: #fff;
+    transition: color 0.4s;
+}
+
+.socialbar a[href^="https://github.com"]:hover svg {
+    color: #fd2d2d; /* Change color on hover */
+}
+

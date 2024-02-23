@@ -1,0 +1,93 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px; 
+    margin-right:700px;
+    margin-bottom: 200px;
+  }
+  .home{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    
+  }
+  .dashboard h1 {
+    color: #333; 
+  }
+  
+  .dashboard h2 {
+    color: #555; 
+  }
+  
+  .content {
+    color: black;
+    
+   
+  }
+  
+  .dashboard .downloadButton {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px; 
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.dashboard .downloadButton:hover {
+    background-color: darkred;
+    color: lightgray;
+}
+
+.Right-image-content img {
+      
+    width: 520px;
+    height: 500px;
+    margin-left: 700px; 
+    margin-top: -500px;
+   
+    position: absolute;
+
+}
+
+
+.Right-image-content img:hover {
+  transform: scaleX(-1); /* Flips the image horizontally on hover */
+}
+/* Media queries */
+
+@media screen and (max-width: 1200px) {
+  .dashboard {
+    margin-right: 200px; /* Adjust margin for smaller screens */
+  }
+  
+  .Right-image-content img {
+    margin-left: 500px; /* Adjust margin for smaller screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard {
+    margin-right: 0; /* Remove right margin for smaller screens */
+  }
+  
+  .Right-image-content img {
+    margin-left: 0; /* Remove left margin for smaller screens */
+     top: 10px; /* Remove top margin for smaller screens */
+    position: relative; /* Reset position to normal flow */
+    width: 100%; /* Make image width 100% */
+    height: auto; /* Set height to auto to maintain aspect ratio */
+    transform: none; /* Reset transform */
+  }
+  .Thulie{
+    width: 50%;
+    margin-top: 100px;
+
+
+  }
+}
+

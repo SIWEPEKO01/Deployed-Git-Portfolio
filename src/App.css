@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    margin-top: 2px;
+}
+.container{
+    display:flex;
+}
+main{
+    width: 100%;
+    padding: 20px;
+}
+.sidebar{
+    background-image: linear-gradient(to bottom, rgb(5, 5, 5), rgb(5, 5, 5), rgb(155, 151, 151), rgb(173, 169, 169));
+    color: #d83f3f;
+    height: 100vh;
+    width: 200px;
+    transition: all 0.5s;
+}
+.top_section{
+    display: flex;
+    align-items:center;
+    padding:20px 15px;
+}
+.logo{
+    font-size: 30px;
+}
+.bars{
+    display: flex;
+    font-size: 25px;
+    margin-left: 50px;
+}
+.link{
+    display: flex;
+    color: #fff;
+    padding: 10px 15px;
+    gap: 15px;
+    transition: all 0.5s;
+}
+.link:hover{
+    background:rgb(245, 93, 93);
+    color: #fdfdfd;
+    transition: all 0.5s;
+}
+.active{
+    background: rgb(255, 88, 88);
+    color: #000;
+}
+.icon, .link_text{
+    font-size: 20px;
+}
+
+
+.product-box {
+    /* Your existing styles */
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.sidebar-link {
+    color: red ;
+}
+.sidebar-item {
+    margin-top: 50px;
+    height: 200px;
+    background-image: linear-gradient(to top, rgba(254, 2, 2, 1), rgb(155, 151, 151), rgb(155, 151, 151));
+}
+
+.sidebar-link i {
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar-link i:hover {
+    color: #ff0404;
+    padding: 20px;
+}

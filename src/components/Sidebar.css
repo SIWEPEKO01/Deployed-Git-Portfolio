@@ -1,0 +1,10 @@
+.header {
+    height: 50px;
+    width: 100%;
+    border-bottom: 5px solid rgba(254, 2, 2, 1);
+    box-shadow: inset 10px 20px 15px rgb(15, 15, 15);
+}
+
+.bottom-box {
+    margin-top: 500px;
+}
